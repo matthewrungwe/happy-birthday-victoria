@@ -218,6 +218,11 @@ h6 { font-size: .8rem; }
 /* ---------------------------------------------------------------------------- */
 
 @media screen and (max-width: 720px) {
+    /* Header */
+    #opening-message p {
+        font-size: 1.5rem;
+    }
+
     /* Main */
     /* About section */
     .about-wrapper {
