@@ -139,6 +139,13 @@ a {
     padding:20px 0 40px 0;
 }
 
+.about-intro {
+    padding: 20px 0 40px 0;
+    max-width: 700px;
+    width: 80%;
+    margin: 0 auto;
+}
+
 .about-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
