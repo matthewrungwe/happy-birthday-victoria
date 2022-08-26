@@ -1,0 +1,244 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Mali:wght@400;500&display=swap');
+
+/* Variables */
+:root {
+    --primaryTextColor: #fff;
+    --secondaryTextColor: black;
+
+    --primaryBgColor: #f47d4a;
+    --secondaryBgColor: #008dcb;
+    --dangerBgColor: #e1315b;
+    --warningBgColor: #ffec5c;
+
+    --cupcakeColor: #825031;
+    --creamColor: #aaa393;
+    --carrotColor: #c35520;
+    --carrotLeafColor: #94c900;
+    --tableColor: #cfcfc7;
+
+    --primaryOverlayColor: rgba(244, 125, 74, .3);
+    --secondaryOverlayColor: rgba(0, 141, 203, .3);
+    --overlayColor: rgba(0, 0, 0, .3);
+}
+
+/* Presets */
+* {
+    padding: 0;
+    margin: 0;
+}
+/* Presets end */
+
+/* Global Styles */
+body {
+    font-family: Mali;
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2.8rem; }
+h3 { font-size: 2.4rem; }
+h4 { font-size: 2rem; }
+h5 { font-size: 1rem; }
+h6 { font-size: .8rem; }
+
+
+
+.bg-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+.overlay {
+    background-color: var(--overlayColor);
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    max-width: 1000px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-bold {
+    font-weight: 600;
+}
+/* Global styles end */
+
+/* Header */
+#header {
+    background-image: url('./images/carrot-cupcake.jpg');
+    height: 80vh;
+}
+
+
+/* Name section */
+#name p {
+    padding: 20px;
+    font-family: 'Dancing Script', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+}
+
+#opening-message {
+    display: grid;
+    align-items: center;
+    height: 80%;
+}
+
+#opening-message p {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--primaryTextColor);
+}
+/* Header end */
+
+/* ---------------------------------------------------------------------------- */
+
+/* Main */
+/* Intro section */
+#intro {
+    padding-bottom: 50px;
+}
+
+.intro-heading {
+    padding: 20px 0;
+}
+
+.intro-message {
+    max-width: 500px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* About section */
+#about {
+    padding-bottom: 50px;
+}
+
+.about-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.about-profile-pic {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    border-radius: 100%;
+    background-color: var(--creamColor);
+}
+
+.about-profile-pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.about-details {
+    padding: 20px;
+    background-color: var(--creamColor);
+    /* border: 1px solid var(--carrotColor); */
+}
+
+.detail {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-evenly;
+    padding: 20px;
+    background-color: var(--tableColor);
+}
+
+.description, .value {
+    font-size: 1.2rem;
+}
+
+/* Verse section */
+#verse  {
+    background-image: url('./images/snow-path.jpg');
+    padding: 50px;
+}
+
+.verse-wrapper {
+    max-width: 500px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.verse-wrapper p {
+    color: var(--primaryTextColor);
+    padding: 50px 0;
+    font-size: 1.2rem;
+}
+
+/* Main end */
+
+/* ---------------------------------------------------------------------------- */
+
+/* Footer */
+/* Copyright section */
+#copyright {
+    padding: 50px;
+    background-color: var(--cupcakeColor);
+}
+
+#copyright p {
+    text-align: center;
+    font-size: .8rem;
+    color: var(--primaryTextColor)
+}
+
+/* Footer end */
+
+/* ---------------------------------------------------------------------------- */
+
+@media screen and (max-width: 720px) {
+    /* Main */
+    /* About section */
+    .about-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+
+
+
+
+
+
+
+/* #intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url('./images/bg.jpg');
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+}
+
+.profile-image img {
+    width: 100%;
+    height:100%;
+}
+
+.happy-birthday-victoria {
+    text-align: center;
+} */
