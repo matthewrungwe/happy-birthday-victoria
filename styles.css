@@ -41,7 +41,10 @@ h4 { font-size: 2rem; }
 h5 { font-size: 1rem; }
 h6 { font-size: .8rem; }
 
-
+a {
+    text-decoration: none;
+    color: var(--primaryBgColor);
+}
 
 .bg-image {
     background-position: center;
